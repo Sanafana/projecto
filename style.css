@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  
+    background-color: #f1efef;
+  }
+.background-page{
+    background-image: radial-gradient(
+       rgba(131, 164, 212, 0.6),
+       rgba(182, 251, 255, 0.6)),
+      url("/img/background_v1.jpg");
+      background-size: cover;
+  background-attachment: fixed;
+ }
+  .main-content-area { /* Adiciona esta classe ao teu <div class="container mt-4"> */
+    margin-left: 250px; /* <<< USA A MESMA LARGURA DO SIDEBAR */
+    padding: 1rem 1.5rem; /* Adiciona algum padding interno (opcional) */
+    /* width: calc(100% - 250px); */ /* Opcional: define largura explícita se necessário */
+  }
+
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar .nav-link {
+    color: white;
+  
+  }
+  
+  .sidebar .nav-link:hover {
+    background-color: #495057;
+  }
+  
+  .sidebar-heading {
+    padding: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+  }
+  
+  .content {
+    margin-left: 250px;
+    padding: 2rem;
+  
+   
+  }
+  .table-fixed-layout {
+    table-layout: fixed;
+    width: 100%; /* Garante que a tabela ocupa a largura disponível no container */
+  }
+  
+  /*Faz com que palavras longas vão para a linha seguinte*/
+
+  .table-fixed-layout td,
+  .table-fixed-layout th {
+    word-wrap: break-word; /* ou overflow-wrap: break-word; */
+    overflow-wrap: break-word; /* Garante compatibilidade */
+  }
+  

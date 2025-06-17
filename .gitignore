@@ -1,0 +1,41 @@
+# Ignorar uploads de fotos (não versionar imagens capturadas)
+api/uploads/fotos_entradas/
+
+# Ignorar ficheiros de log e temporários
+*.log
+log_entradas.txt
+log_fotos.txt
+api/historicos/log_fotos.txt
+
+# Ignorar ficheiros de dados gerados
+api/files/*/valor.txt
+api/files/*/hora.txt
+api/files/*/nome.txt
+api/files/*/*log.txt
+api/files/sensor_movimento/valor.txt
+api/files/sensor_porta/valor.txt
+api/files/sensor_porta/hora.txt
+api/files/sensor_porta/nome.txt
+api/files/sensor_porta/sensor_portalog.txt
+api/files/temperatura_torno/valor.txt
+api/files/temperatura_torno/hora.txt
+api/files/temperatura_torno/nome.txt
+api/files/temperatura_torno/temperaturalog.txt
+api/files/peso/valor.txt
+api/files/peso/hora.txt
+api/files/peso/nome.txt
+api/files/peso/pesolog.txt
+api/files/luminosidade/valor.txt
+api/files/luminosidade/hora.txt
+api/files/luminosidade/nome.txt
+api/files/luminosidade/luminosidadelog.txt
+
+# Ignorar ficheiros do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar ficheiros temporários do editor
+*.swp
+*.swo
+*.bak
+~* 
